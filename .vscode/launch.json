@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "configurations": [{
+    "type": "node",
+    "program": "${workspaceRoot}/child_process/master.js",
+    "request": "launch",
+    "name": "Launch",
+    "skipFiles": [
+      "node_modules"
+    ],
+    "serverReadyAction": {
+      "pattern": "listening on port ([0-9]+)",
+      "uriFormat": "http://localhost:%s",
+      "action": "openExternally"
+    }
+  }]
+}
